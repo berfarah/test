@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="welcome resume">
+  <img src="/images/bernardo.png" class="left" />
+  <h2>
+    Hi, I am <strong>Bernardo Farah</strong> - a mix of Swiss and Brazilian, an
+    <strong>engineering leader</strong>
+    and a <strong>dad</strong>.
+  </h2>
+</div>
+
+<div class="body"><div>
+  <ul id="posts">
+    <h4>Posts</h4>
+    {{ range first 3 (where .Site.RegularPages "Type" "post") }}
+    {{ if .Params.href }}
+      <li><a href="{{ .Params.href }}" target="_blank">
+        <h5>{{ .Title }}<i class="icon icon-external-link"></i><small>{{ .Date.Format "January 2006" }}</small></h5>
+      </a></li>
+    {{ else }}
+      <li><a href="{{ .RelPermalink }}">
+        <h5>{{ .Title }}<small>{{ .PublishDate.Format "January 2006" }}</small></h5>
+      </a></li>
+    {{ end }}
+    {{ end }}
+  </ul>
+
+  <ul id="projects">
+    <h4>Projects</h4>
+    {{ range first 3 (where .Site.RegularPages "Type" "project") }}
+      <li><a href="{{ .Params.href }}" target="_blank">
+        <h5>{{ .Title }}<small>{{ .Description }}</small></h5>
+      </a></li>
+    {{ end }}
+  </ul>
+</div></div>
+{{ end }}

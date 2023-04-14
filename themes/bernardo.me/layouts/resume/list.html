@@ -1,0 +1,65 @@
+{{ define "main" }}
+<section id="resume" class="resume" role="main">
+  <!-- INFO -->
+  <div class="info">
+    {{ $info := .Site.Params }}
+    <p>
+      {{ $info.author }}, {{ $info.location }} -
+      <a href="mailto:{{ $info.email }}">{{ $info.email }}</a> -
+      <a href="//{{ $info.homepage }}">{{ $info.homepage }}</a>
+    </p>
+  </div>
+  <!-- SKILLS -->
+  <h4 id="skills">Skills</h4>
+  <div class="skills">
+    {{ range .Site.Data.resume.skills }}
+    <div>
+      <h5>{{ .title }}</h5>
+      <ul>
+      {{ range .items }}
+        <li>{{ . }}</li>
+      {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+  <!-- EXPERIENCE -->
+  <div class="experience">
+    <h4 id="experience">Experience</h4>
+    {{ $xp := (where .Site.RegularPages.ByDate.Reverse "Type" "resume") }}
+    {{ range $xp }}
+    <div class="job">
+      <div class="meta">
+        <h5><span class="accent">{{ .Params.company }}</span> {{ .Params.title }}</h5>
+        <small>{{ .Params.from }} &mdash; {{ .Params.to }}</small>
+      </div>
+      {{ .Content | safeHTML }}
+    </div>
+    {{ end }}
+  </div>
+  <!-- EDUCATION -->
+  <div class="education">
+    <h4 id="education">Education</h4>
+    {{ range .Site.Data.resume.education }}
+    <div class="qualification">
+      <div class="meta">
+        <h5><span class="edu name">{{ .name }}</span> {{ .qualification }}</h5>
+      </div>
+      <p>{{ .location }}</p>
+    </div>
+    {{ end }}
+  </div>
+  <!-- TECHNOLOGIES -->
+  <h4 id="technologies">Technologies</h4>
+  <div class="skills">
+    {{ range .Site.Data.resume.technologies }}
+      <p><strong>{{ .title }}:</strong> {{ delimit .items ", " " and " }}</p>
+    {{ end }}
+    </div>
+  <!-- INTERESTS -->
+  <div class="interests">
+    <h4>Interests</h4>
+    <p>{{ .Site.Data.resume.interests }}</p>
+  </div>
+</section>
+{{ end }}

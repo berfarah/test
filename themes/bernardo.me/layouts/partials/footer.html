@@ -1,0 +1,13 @@
+<footer>
+  <ul>
+    <li><a href="mailto:{{ .Site.Params.email }}">{{ partial "icon.html" "envelope" }} Email</a></li>
+    {{ range .Site.Menus.footer }}
+    <li><a href="{{ .URL }}">{{ partial "icon.html" "file-lines" }} {{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+  <ul>
+    {{ range .Site.Params.socials }}
+    <li><a href="{{ .url }}" target="_blank">{{ partial "icon.html" .icon }} {{ .name }}</a></li>
+    {{ end }}
+  </ul>
+</footer>

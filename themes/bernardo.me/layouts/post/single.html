@@ -1,0 +1,11 @@
+{{ define "head" }}
+{{ $postCSS := resources.Get "scss/posts.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $postCSS.Permalink }}" as="style" {{ if hugo.IsProduction -}}integrity="{{ $postCSS.link }}"{{- end }} />
+{{ end }}
+
+{{ define "main" }}
+<section class="blog"><article>
+  <div class="page-title"><span><h1>{{ .Title }}</h1></span></div>
+  {{ .Content }}
+</article></section>
+{{ end }}

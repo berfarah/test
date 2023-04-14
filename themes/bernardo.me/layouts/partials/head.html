@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scape=1.0">
+<!-- Force latest IE rendering engine or Chrome frame -->
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<title>
+{{ if .IsHome }}
+  {{ .Site.Title }}: {{ .Site.Params.tagline }}
+{{ else }}
+  {{ .Title }} - {{ .Site.Title }}
+{{ end }}
+</title>
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.author }}">
+<link href="/favicon.ico" rel="icon" type="image/ico" />
+
+{{ $sass := resources.Get "scss/main.scss" }}
+{{ $css  := $sass | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $css.Permalink }}" as="style" {{ if hugo.IsProduction -}}integrity="{{ css.link }}"{{- end }} />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleid }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ .Site.Params.googleid }}');
+</script>

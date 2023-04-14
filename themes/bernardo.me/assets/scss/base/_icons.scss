@@ -1,0 +1,15 @@
+
+$fa-css-prefix: "icon";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: -.125em;
+  position: relative;
+}
+
+a .icon {
+  color: $blue-dark;
+}

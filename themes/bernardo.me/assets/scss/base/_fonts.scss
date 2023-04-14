@@ -1,0 +1,211 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3187960, 2016-03-17T03:09:44-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Texta
+ * URL: http://www.myfonts.com/fonts/latinotype/texta
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3187960
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2014 by Daniel Hernandez &amp; Miguel Hernandez. All rights reserved.
+ *
+ * © 2016 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/30a4f8");
+
+@font-face {
+  font-family: 'Office Code Pro';
+  font-weight: 500;
+  src: url('../fonts/OfficeCodePro-Regular.eot');
+  src: url('../fonts/OfficeCodePro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OfficeCodePro-Regular.woff2') format('woff2'),
+       url('../fonts/OfficeCodePro-Regular.woff') format('woff'),
+       url('../fonts/OfficeCodePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Office Code Pro';
+  font-weight: 700;
+  src: url('../fonts/OfficeCodePro-Bold.eot');
+  src: url('../fonts/OfficeCodePro-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OfficeCodePro-Bold.woff2') format('woff2'),
+       url('../fonts/OfficeCodePro-Bold.woff') format('woff'),
+       url('../fonts/OfficeCodePro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 100;
+  src: url('../fonts/30A4F8_10_0.eot');
+  src: url('../fonts/30A4F8_10_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_10_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_10_0.woff') format('woff'),
+       url('../fonts/30A4F8_10_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 100;
+  font-style: italic;
+  src: url('../fonts/30A4F8_F_0.eot');
+  src: url('../fonts/30A4F8_F_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_F_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_F_0.woff') format('woff'),
+       url('../fonts/30A4F8_F_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 200;
+  src: url('../fonts/30A4F8_B_0.eot');
+  src: url('../fonts/30A4F8_B_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_B_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_B_0.woff') format('woff'),
+       url('../fonts/30A4F8_B_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 200;
+  font-style: italic;
+  src: url('../fonts/30A4F8_A_0.eot');
+  src: url('../fonts/30A4F8_A_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_A_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_A_0.woff') format('woff'),
+       url('../fonts/30A4F8_A_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 300;
+  src: url('../fonts/30A4F8_5_0.eot');
+  src: url('../fonts/30A4F8_5_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_5_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_5_0.woff') format('woff'),
+       url('../fonts/30A4F8_5_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 300;
+  font-style: italic;
+  src: url('../fonts/30A4F8_6_0.eot');
+  src: url('../fonts/30A4F8_6_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_6_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_6_0.woff') format('woff'),
+       url('../fonts/30A4F8_6_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 400;
+  src: url('../fonts/30A4F8_E_0.eot');
+  src: url('../fonts/30A4F8_E_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_E_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_E_0.woff') format('woff'),
+       url('../fonts/30A4F8_E_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../fonts/30A4F8_9_0.eot');
+  src: url('../fonts/30A4F8_9_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_9_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_9_0.woff') format('woff'),
+       url('../fonts/30A4F8_9_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 500;
+  src: url('../fonts/30A4F8_D_0.eot');
+  src: url('../fonts/30A4F8_D_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_D_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_D_0.woff') format('woff'),
+       url('../fonts/30A4F8_D_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 500;
+  font-style: italic;
+  src: url('../fonts/30A4F8_C_0.eot');
+  src: url('../fonts/30A4F8_C_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_C_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_C_0.woff') format('woff'),
+       url('../fonts/30A4F8_C_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 700;
+  src: url('../fonts/30A4F8_3_0.eot');
+  src: url('../fonts/30A4F8_3_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_3_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_3_0.woff') format('woff'),
+       url('../fonts/30A4F8_3_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 700;
+  font-style: italic;
+  src: url('../fonts/30A4F8_2_0.eot');
+  src: url('../fonts/30A4F8_2_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_2_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_2_0.woff') format('woff'),
+       url('../fonts/30A4F8_2_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 800;
+  src: url('../fonts/30A4F8_8_0.eot');
+  src: url('../fonts/30A4F8_8_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_8_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_8_0.woff') format('woff'),
+       url('../fonts/30A4F8_8_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 800;
+  font-style: italic;
+  src: url('../fonts/30A4F8_7_0.eot');
+  src: url('../fonts/30A4F8_7_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_7_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_7_0.woff') format('woff'),
+       url('../fonts/30A4F8_7_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 900;
+  src: url('../fonts/30A4F8_4_0.eot');
+  src: url('../fonts/30A4F8_4_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_4_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_4_0.woff') format('woff'),
+       url('../fonts/30A4F8_4_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 900;
+  font-style: italic;
+  src: url('../fonts/30A4F8_1_0.eot');
+  src: url('../fonts/30A4F8_1_0.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/30A4F8_1_0.woff2') format('woff2'),
+       url('../fonts/30A4F8_1_0.woff') format('woff'),
+       url('../fonts/30A4F8_1_0.ttf') format('truetype');
+}

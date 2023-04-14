@@ -1,0 +1,23 @@
+baseURL: 'https://www.bernardo.me'
+languageCode: 'en-us'
+title: 'Bernardo Farah'
+theme: 'bernardo.me'
+params:
+  author: "Bernardo Farah"
+  googleid: "UA-25464133-1"
+  email: "hi@bernardo.me"
+  location: "Seattle WA, USA"
+  homepage: "www.bernardo.me"
+  tagline: Engineering Leader & Dad
+  description: Hi, I am Bernardo Farah - a mix of Swiss and Brazilian, an engineering leader, and a dad
+  socials:
+    - icon: linkedin
+      name: LinkedIn
+      url: https://www.linkedin.com/in/berfarah
+    - icon: github
+      name: Github
+      url: https://github.com/berfarah
+
+markup:
+  highlight:
+    noClasses: false

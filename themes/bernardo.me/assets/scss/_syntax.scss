@@ -1,0 +1,82 @@
+@import "_syntax_highlight";
+
+.highlight .c,
+.highlight .cd,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+  color: #b0b0b0;
+}
+
+pre {
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight pre {
+  margin: 1.5em 0;
+  border: 1px solid $grey-lighter;
+  padding: 0.85rem 1rem 0.85rem;
+  border-radius: 4px;
+  font-size: 1em;
+  background: #fefefe;
+}
+
+.highlight table {
+  margin: 1.5em 0;
+  border-collapse: separate;
+
+  @include media($medium-screen-up) {
+    // table-layout: auto;
+  }
+}
+
+.highlight td {
+  border: 1px solid $grey-lighter;
+  width: auto;
+}
+
+td.gutter {
+  background: #fafafa;
+  border-right: 1px solid #ddd;
+  color: #999;
+  border-radius: 4px 0 0 4px;
+  padding: 0.75rem 0.5rem;
+  display: none;
+  width: 2rem;
+
+  /* Stop line numbers being visually selected */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  @include media($medium-screen-up) {
+    display: table-cell;
+    border-right-width: 0;
+  }
+}
+
+td.code {
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+
+  @include media($medium-screen-up) {
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+p > code,
+a > code,
+li > code,
+p > pre,
+a > pre,
+li > pre {
+  background: $grey-lighter;
+  background: lighten($blue-light, 50%);
+  border-radius: 4px;
+  padding: 2px 4px;
+}

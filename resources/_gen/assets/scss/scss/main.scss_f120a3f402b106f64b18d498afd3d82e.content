@@ -1,0 +1,620 @@
+@charset "UTF-8";
+@import url("//hello.myfonts.net/count/30a4f8");
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #d98d0b;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Texta, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    background-color: #ae7109;
+    color: #fff; }
+  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+      background-color: #d98d0b; }
+
+fieldset {
+  background-color: #eff0f0;
+  border: 1px solid #bfc2c4;
+  margin: 0 0 0.75em;
+  padding: 1.5em; }
+
+input,
+label,
+select {
+  display: block;
+  font-family: Texta, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem; }
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.375em; }
+  label.required::after {
+    content: "*"; }
+  label abbr {
+    display: none; }
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple=multiple] {
+  background-color: #fff;
+  border: 1px solid #bfc2c4;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: Texta, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%; }
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+  select[multiple=multiple]:hover {
+    border-color: #999b9d; }
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+  select[multiple=multiple]:focus {
+    border-color: #d98d0b;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(193, 125, 10, 0.7);
+    outline: none; }
+  input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
+  select[multiple=multiple]:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed; }
+    input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
+    select[multiple=multiple]:disabled:hover {
+      border: 1px solid #bfc2c4; }
+
+textarea {
+  resize: vertical; }
+
+input[type="search"] {
+  appearance: none; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    display: inline-block; }
+
+input[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%; }
+
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+dl {
+  margin-bottom: 0.75em; }
+  dl dt {
+    font-weight: 600;
+    margin-top: 0.75em; }
+  dl dd {
+    margin: 0; }
+
+table {
+  border-collapse: collapse;
+  font-feature-settings: "kern", "liga", "tnum";
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #8f9293;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #bfc2c4;
+  padding: 0.75em 0; }
+
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+body {
+  background: #f5f8fa;
+  color: #202325;
+  font-family: Texta, Helvetica, Arial, sans-serif;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: 1.2rem;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Texta, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+  h1 .accent,
+  h2 .accent,
+  h3 .accent,
+  h4 .accent,
+  h5 .accent,
+  h6 .accent {
+    color: #f29e0b; }
+
+span.block {
+  display: inline-block; }
+
+h1 {
+  font-size: 2.84231164rem;
+  font-weight: 500; }
+
+h2 {
+  font-size: 2.1322668rem;
+  font-weight: 500; }
+
+h3 {
+  font-size: 1.5996rem; }
+
+h4, h5, h6 {
+  font-weight: 900; }
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: .1em; }
+
+h6 {
+  color: #7e8183; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: #d98d0b;
+  text-decoration: none;
+  transition: color 150ms ease; }
+  a:active, a:focus, a:hover {
+    color: #f29e0b; }
+  a:visited {
+    color: #d98d0b; }
+
+hr {
+  border-bottom: 1px solid #bfc2c4;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+tt, code, kbd, samp, pre {
+  font-family: "Office Code Pro", monospace;
+  font-size: 0.75em; }
+
+sup, sub {
+  font-size: 0.75em; }
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 3187960, 2016-03-17T03:09:44-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Texta
+ * URL: http://www.myfonts.com/fonts/latinotype/texta
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3187960
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2014 by Daniel Hernandez &amp; Miguel Hernandez. All rights reserved.
+ *
+ * © 2016 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'Office Code Pro';
+  font-weight: 500;
+  src: url("../fonts/OfficeCodePro-Regular.eot");
+  src: url("../fonts/OfficeCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficeCodePro-Regular.woff2") format("woff2"), url("../fonts/OfficeCodePro-Regular.woff") format("woff"), url("../fonts/OfficeCodePro-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Office Code Pro';
+  font-weight: 700;
+  src: url("../fonts/OfficeCodePro-Bold.eot");
+  src: url("../fonts/OfficeCodePro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OfficeCodePro-Bold.woff2") format("woff2"), url("../fonts/OfficeCodePro-Bold.woff") format("woff"), url("../fonts/OfficeCodePro-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 100;
+  src: url("../fonts/30A4F8_10_0.eot");
+  src: url("../fonts/30A4F8_10_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_10_0.woff2") format("woff2"), url("../fonts/30A4F8_10_0.woff") format("woff"), url("../fonts/30A4F8_10_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 100;
+  font-style: italic;
+  src: url("../fonts/30A4F8_F_0.eot");
+  src: url("../fonts/30A4F8_F_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_F_0.woff2") format("woff2"), url("../fonts/30A4F8_F_0.woff") format("woff"), url("../fonts/30A4F8_F_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 200;
+  src: url("../fonts/30A4F8_B_0.eot");
+  src: url("../fonts/30A4F8_B_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_B_0.woff2") format("woff2"), url("../fonts/30A4F8_B_0.woff") format("woff"), url("../fonts/30A4F8_B_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 200;
+  font-style: italic;
+  src: url("../fonts/30A4F8_A_0.eot");
+  src: url("../fonts/30A4F8_A_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_A_0.woff2") format("woff2"), url("../fonts/30A4F8_A_0.woff") format("woff"), url("../fonts/30A4F8_A_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 300;
+  src: url("../fonts/30A4F8_5_0.eot");
+  src: url("../fonts/30A4F8_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_5_0.woff2") format("woff2"), url("../fonts/30A4F8_5_0.woff") format("woff"), url("../fonts/30A4F8_5_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/30A4F8_6_0.eot");
+  src: url("../fonts/30A4F8_6_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_6_0.woff2") format("woff2"), url("../fonts/30A4F8_6_0.woff") format("woff"), url("../fonts/30A4F8_6_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 400;
+  src: url("../fonts/30A4F8_E_0.eot");
+  src: url("../fonts/30A4F8_E_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_E_0.woff2") format("woff2"), url("../fonts/30A4F8_E_0.woff") format("woff"), url("../fonts/30A4F8_E_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/30A4F8_9_0.eot");
+  src: url("../fonts/30A4F8_9_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_9_0.woff2") format("woff2"), url("../fonts/30A4F8_9_0.woff") format("woff"), url("../fonts/30A4F8_9_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 500;
+  src: url("../fonts/30A4F8_D_0.eot");
+  src: url("../fonts/30A4F8_D_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_D_0.woff2") format("woff2"), url("../fonts/30A4F8_D_0.woff") format("woff"), url("../fonts/30A4F8_D_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 500;
+  font-style: italic;
+  src: url("../fonts/30A4F8_C_0.eot");
+  src: url("../fonts/30A4F8_C_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_C_0.woff2") format("woff2"), url("../fonts/30A4F8_C_0.woff") format("woff"), url("../fonts/30A4F8_C_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 700;
+  src: url("../fonts/30A4F8_3_0.eot");
+  src: url("../fonts/30A4F8_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_3_0.woff2") format("woff2"), url("../fonts/30A4F8_3_0.woff") format("woff"), url("../fonts/30A4F8_3_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/30A4F8_2_0.eot");
+  src: url("../fonts/30A4F8_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_2_0.woff2") format("woff2"), url("../fonts/30A4F8_2_0.woff") format("woff"), url("../fonts/30A4F8_2_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 800;
+  src: url("../fonts/30A4F8_8_0.eot");
+  src: url("../fonts/30A4F8_8_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_8_0.woff2") format("woff2"), url("../fonts/30A4F8_8_0.woff") format("woff"), url("../fonts/30A4F8_8_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 800;
+  font-style: italic;
+  src: url("../fonts/30A4F8_7_0.eot");
+  src: url("../fonts/30A4F8_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_7_0.woff2") format("woff2"), url("../fonts/30A4F8_7_0.woff") format("woff"), url("../fonts/30A4F8_7_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 900;
+  src: url("../fonts/30A4F8_4_0.eot");
+  src: url("../fonts/30A4F8_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_4_0.woff2") format("woff2"), url("../fonts/30A4F8_4_0.woff") format("woff"), url("../fonts/30A4F8_4_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Texta';
+  font-weight: 900;
+  font-style: italic;
+  src: url("../fonts/30A4F8_1_0.eot");
+  src: url("../fonts/30A4F8_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30A4F8_1_0.woff2") format("woff2"), url("../fonts/30A4F8_1_0.woff") format("woff"), url("../fonts/30A4F8_1_0.ttf") format("truetype"); }
+
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: -.125em;
+  position: relative; }
+
+a .icon {
+  color: #214d68; }
+
+::selection {
+  background: #f29e0b;
+  color: #202325; }
+
+body {
+  margin: 0; }
+
+.logo {
+  text-align: center;
+  padding-top: 1rem; }
+  .logo a {
+    color: inherit; }
+  @media screen and (min-width: 600px) {
+    .logo {
+      padding-top: 3rem; } }
+.bernardo {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #202325;
+  padding-left: 3px;
+  margin: 0; }
+  .bernardo.bernardo-main {
+    font-size: 2.1322668rem; }
+
+footer {
+  padding: 1.5rem 2rem;
+  max-width: 55em;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none; }
+  @media screen and (min-width: 600px) {
+    footer {
+      justify-content: space-between; } }
+  footer:after {
+    display: none; }
+  footer ul {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 600px) {
+      footer ul {
+        flex-direction: row; } }
+    footer ul li {
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 600px) {
+        footer ul li {
+          margin: 0; } }
+  footer a {
+    width: 140px;
+    padding: 1.25rem 1rem;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    align-items: flex-start; }
+    footer a .icon {
+      margin-right: .5em; }
+
+.welcome {
+  padding: 2rem 1rem;
+  max-width: 55em;
+  margin-left: auto;
+  margin-right: auto; }
+  .welcome::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .welcome strong:last-child {
+    display: inline-block; }
+  .welcome h2 {
+    font-weight: 200;
+    font-size: 1.7rem;
+    margin: 0; }
+    .welcome h2 strong {
+      font-weight: 500; }
+  .welcome img {
+    width: 50%;
+    display: block;
+    margin: 0 auto 2rem; }
+  .welcome button {
+    background: transparent;
+    color: #f29e0b;
+    border: 1px solid #f29e0b; }
+  @media screen and (min-width: 600px) {
+    .welcome {
+      padding: 3rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .welcome img {
+        width: 30%;
+        margin: 0 3em 0 0; } }
+  @media screen and (min-width: 900px) {
+    .welcome h2 {
+      font-size: 2.6rem; } }
+.body {
+  background: #d3d7d8; }
+  .body div {
+    margin: 0 auto;
+    max-width: 55em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .body ul {
+    padding: 2rem 1rem;
+    text-align: center; }
+    @media screen and (min-width: 600px) {
+      .body ul {
+        padding: 3rem 2rem; } }
+    .body ul h4 {
+      margin-bottom: 1rem; }
+    @media screen and (min-width: 600px) {
+      .body ul a small {
+        margin-left: 0.5rem; } }
+    .body ul a small {
+      color: #202325;
+      font-weight: normal;
+      display: block; }
+    .body ul li {
+      margin-bottom: 0.5rem; }
+    .body ul i {
+      margin-left: 0.5rem;
+      font-size: 0.8em; }
+
+section {
+  max-width: 45em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 2rem; }
+  section::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section ul,
+  section ol {
+    margin: 0.75em 0;
+    padding-left: 1.5em; }
+  section ul {
+    list-style: disc; }
+  section ol {
+    list-style: decimal; }
+  section li {
+    padding-left: 0.25rem;
+    margin-bottom: 0.25rem; }
+
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  margin: 1em 0 0.5rem; }
+  article h1:first-child, article h2:first-child, article h3:first-child, article h4:first-child, article h5:first-child, article h6:first-child {
+    margin-top: 0; }
+
+article .justify {
+  text-align: justify; }
+
+article .align-right {
+  text-align: right; }
+
+article .align-center {
+  text-align: center; }
+
+article .left, article .right {
+  margin-bottom: 1rem; }
+
+article .left {
+  float: left;
+  margin-right: 1rem; }
+
+article .right {
+  float: right;
+  margin-left: 1rem; }
+
+article a:active {
+  background: white; }
+
+.resume p,
+.resume li {
+  text-align: justify; }
+
+#resume {
+  margin: 0 auto 3rem; }
+
+.resume h4 {
+  margin: 4em 0 1.5em;
+  text-align: center; }
+
+.resume h5 {
+  margin: 0; }
+
+@media screen and (min-width: 600px) {
+  .resume .skills > div {
+    margin-bottom: 1.5em; } }
+
+.resume .info {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .resume .info > *:before {
+    content: '-';
+    padding: 0 5px; }
+  .resume .info > *:first-child:before {
+    content: '';
+    padding: 0; }
+
+.resume .job, .resume .education {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+  .resume .job .meta, .resume .education .meta {
+    line-height: 1.2; }
+    .resume .job .meta:after, .resume .education .meta:after {
+      content: ' ';
+      display: block;
+      clear: both; }
+  @media screen and (min-width: 600px) {
+    .resume .job h5, .resume .education h5 {
+      float: left; } }
+  .resume .job small, .resume .education small {
+    text-transform: uppercase;
+    margin: .75em 0;
+    display: block; }
+    @media screen and (min-width: 600px) {
+      .resume .job small, .resume .education small {
+        float: right;
+        margin: 0; } }
+@media print {
+  body {
+    background: white; }
+  .employments {
+    page-break-before: always; }
+  .job, p, table {
+    page-break-inside: avoid; }
+  footer {
+    display: none; } }

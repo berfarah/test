@@ -1,0 +1,6 @@
+---
+
+title: Résumé
+menu: footer
+
+---

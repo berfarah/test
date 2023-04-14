@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "../../submodules/bourbon/app/assets/stylesheets/bourbon";
+@import "base/base";
+
+// @import "variables";
+@import "elements";
+@import "helpers";
+@import "resume";
+
+@media print {
+  body { background: white }
+  .employments { page-break-before: always; }
+  .job, p, table { page-break-inside: avoid; }
+  footer { display: none }
+}

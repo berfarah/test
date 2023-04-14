@@ -1,0 +1,51 @@
+info:
+  name: Bernardo Farah
+  email: hi@bernardo.me
+  homepage: www.bernardo.me
+  github: //github.com/berfarah
+  location: Seattle WA, USA
+
+skills:
+  - title: Leadership Skills
+    items:
+      - Setting team direction and strategy in partnership with product team
+      - Working cross-functionally to achieve business objectives
+      - Recruiting, hiring, and on-boarding developers and managers
+      - Developing careers of engineers and managers
+      - Guiding teams on architecture and product trade-offs
+      - Driving improvements to policy and processes to keep team happy and productive
+  - title: Technical Skills
+    items:
+      - Writing comprehensible, well-tested and scalable code
+      - Designing and building maintainable and scalable systems that meet user needs
+      - Managing priorities, deadlines and project trade-offs to deliver projects incrementally and  on-time
+      - Collaborating with UX/Design, QA, Marketing, Security, and other engineering orgs to deliver quality software
+      - Write clear and concise documentation for design, systems, and processes
+
+education:
+  - name: Regent's University
+    qualification: BA Global Marketing Management
+    location: London, United Kingdom
+
+technologies:
+  - title: Languages
+    items:
+      - Ruby
+      - Go
+      - Javascript
+      - Typescript
+      - Python
+      - PHP
+      - SQL
+  - title: Storage
+    items:
+      - MySQL
+      - PostgreSQL
+      - Redis
+      - DynamoDB
+  - title: Systems
+    items:
+      - AWS
+      - Azure
+
+interests: "Photography, Soccer, Video Games, Cocktails and being a dad"

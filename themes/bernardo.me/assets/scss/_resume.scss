@@ -1,0 +1,80 @@
+.resume p,
+.resume li {
+  text-align: justify;
+}
+
+#resume {
+  margin: 0 auto 3rem;
+}
+
+.resume {
+  h4 {
+    margin: 4em 0 1.5em;
+    text-align: center;
+  }
+
+  h5 { margin: 0; }
+
+  .skills {
+    @include media($medium-screen-up) {
+      // @include display(flex);
+      // @include flex-flow(row wrap);
+      // @include justify-content(left);
+
+      & > div {
+        margin-bottom: 1.5em;
+      }
+
+      // & > * {
+      //   width: 48%;
+      //   margin-right: 4%;
+      // }
+
+      // & > *:last-child {
+      //   margin-right: 0;
+      // }
+    }
+  }
+
+  .info {
+    @include display(flex);
+    @include flex-flow(row wrap);
+    @include justify-content(center);
+
+    & > *:before {
+      content: '-';
+      padding: 0 5px;
+    }
+
+    & > *:first-child:before {
+      content: '';
+      padding: 0;
+    }
+  }
+
+  .job, .education {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+
+    .meta {
+      line-height: 1.2;
+
+      &:after {
+        content: ' ';
+        display: block;
+        clear: both;
+      }
+    }
+
+    h5 {
+      @include media($medium-screen-up) { float: left; }
+    }
+
+    small {
+      text-transform: uppercase;
+      margin: .75em 0;
+      display: block;
+      @include media($medium-screen-up) { float: right; margin: 0; }
+    }
+  }
+}
