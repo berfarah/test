@@ -1,6 +1,7 @@
 {{ define "main" }}
 <div class="welcome resume">
-  <img src="/images/bernardo.png" class="left" />
+  {{ $image := resources.Get "images/bernardo.png" }}
+  <img src="{{ $image.RelPermalink }}" class="left" />
   <h2>
     Hi, I am <strong>Bernardo Farah</strong> - a mix of Swiss and Brazilian, an
     <strong>engineering leader</strong>

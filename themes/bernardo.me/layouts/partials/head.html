@@ -11,7 +11,7 @@
 </title>
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.author }}">
-<link href="/favicon.ico" rel="icon" type="image/ico" />
+<link href="{{ .Site.BaseURL }}/favicon.ico" rel="icon" type="image/ico" />
 
 {{ $sass := resources.Get "scss/main.scss" }}
 {{ $css  := $sass | resources.ToCSS }}
