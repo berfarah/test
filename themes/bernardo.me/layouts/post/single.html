@@ -1,6 +1,6 @@
 {{ define "head" }}
 {{ $postCSS := resources.Get "scss/posts.scss" | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $postCSS.Permalink }}" as="style" {{ if hugo.IsProduction -}}integrity="{{ $postCSS.link }}"{{- end }} />
+<link rel="stylesheet" href="{{ $postCSS.Permalink }}" as="style" />
 {{ end }}
 
 {{ define "main" }}

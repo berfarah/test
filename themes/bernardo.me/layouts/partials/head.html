@@ -15,7 +15,7 @@
 
 {{ $sass := resources.Get "scss/main.scss" }}
 {{ $css  := $sass | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $css.Permalink }}" as="style" {{ if hugo.IsProduction -}}integrity="{{ css.link }}"{{- end }} />
+<link rel="stylesheet" href="{{ $css.Permalink }}" as="style" />
 
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleid }}"></script>
 <script>
