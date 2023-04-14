@@ -13,8 +13,8 @@
 <meta name="author" content="{{ .Site.Params.author }}">
 <link href="{{ .Site.BaseURL }}/favicon.ico" rel="icon" type="image/ico" />
 
-{{ $sass := resources.Get "scss/main.scss" }}
-{{ $css  := $sass | resources.ToCSS }}
+{{ $css := resources.Get "scss/main.scss" | resources.ToCSS }}
+{{ if hugo.IsProduction }}{{ $css = $css | minify | fingerprint "sha512" }}{{ end }}
 <link rel="stylesheet" href="{{ $css.Permalink }}" as="style" />
 
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleid }}"></script>
