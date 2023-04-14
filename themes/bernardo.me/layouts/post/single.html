@@ -1,6 +1,6 @@
 {{ define "head" }}
 {{ $css := resources.Get "scss/posts.scss" | resources.ToCSS }}
-{{ if hugo.IsProduction }}{{ $css = $css | minify | fingerprint "sha512" }}{{ end }}
+{{ if hugo.IsProduction }}{{ $css = $css | minify | fingerprint "md5" }}{{ end }}
 <link rel="stylesheet" href="{{ $css.Permalink }}" as="style" />
 {{ end }}
 

@@ -14,7 +14,7 @@
 <link href="{{ .Site.BaseURL }}/favicon.ico" rel="icon" type="image/ico" />
 
 {{ $css := resources.Get "scss/main.scss" | resources.ToCSS }}
-{{ if hugo.IsProduction }}{{ $css = $css | minify | fingerprint "sha512" }}{{ end }}
+{{ if hugo.IsProduction }}{{ $css = $css | minify | fingerprint "md5" }}{{ end }}
 <link rel="stylesheet" href="{{ $css.Permalink }}" as="style" />
 
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleid }}"></script>
